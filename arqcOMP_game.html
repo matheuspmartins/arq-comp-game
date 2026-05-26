@@ -1,82 +1,324 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAME PC</title>
+    <title>GAME ARQ COMP</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .linha {
+            margin: 10px;
+        }
+
+        input {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 20px;
+            text-transform: uppercase;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background-color: darkblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        .dicas {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
-<style>
-    .monta-palavras {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    input{
-        width: 40px;
-        height: 40px;
-        border-radius: 15px;
-        font-size: xx-large;
-        text-align: center;
-    }
-</style>
+
 <body>
-    <h1>GAME ARQ COMP</h1>
 
-    <div class="monta-palavras">
-    <div class="palavras-horizontal">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-    </div>
+    <h1>GAME DE ARQUITETURA COMPUTACIONAL</h1>
+    <h2>Complete as palavras usando as dicas</h2>
+    <button onclick="window.location.href='./resultados.html'">VER RESULTADOS</button>
 
-    <div class="palavras-horizontal">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-    </div>
-    
-    <div class="palavras-horizontal">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
+    <!-- CPU -->
+    <div class="linha">
+        1.
+        <input id="cpu1" maxlength="1">
+        <input id="cpu2" maxlength="1">
+        <input id="cpu3" maxlength="1">
     </div>
 
-    <div class="palavras-horizontal">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
+    <!-- ULA -->
+    <div class="linha">
+        2.
+        <input id="ula1" maxlength="1">
+        <input id="ula2" maxlength="1">
+        <input id="ula3" maxlength="1">
     </div>
 
-    <div class="palavras-horizontal">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
+    <!-- REGISTRADORES -->
+    <div class="linha">
+        3.
+        <input id="reg1" maxlength="1">
+        <input id="reg2" maxlength="1">
+        <input id="reg3" maxlength="1">
+        <input id="reg4" maxlength="1">
+        <input id="reg5" maxlength="1">
+        <input id="reg6" maxlength="1">
+        <input id="reg7" maxlength="1">
+        <input id="reg8" maxlength="1">
+        <input id="reg9" maxlength="1">
+        <input id="reg10" maxlength="1">
+        <input id="reg11" maxlength="1">
+        <input id="reg12" maxlength="1">
+        <input id="reg13" maxlength="1">
     </div>
 
-    <div class="palavras-horizontal">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-        <input type="text" maxlength="1">
-    </div>
+    <!-- RAM -->
+    <div class="linha">
+        4.
+        <input id="ram1" maxlength="1">
+        <input id="ram2" maxlength="1">
+        <input id="ram3" maxlength="1">
     </div>
 
+    <!-- ROM -->
+    <div class="linha">
+        5.
+        <input id="rom1" maxlength="1">
+        <input id="rom2" maxlength="1">
+        <input id="rom3" maxlength="1">
+    </div>
+
+    <!-- EPROM -->
+    <div class="linha">
+        6.
+        <input id="eprom1" maxlength="1">
+        <input id="eprom2" maxlength="1">
+        <input id="eprom3" maxlength="1">
+        <input id="eprom4" maxlength="1">
+        <input id="eprom5" maxlength="1">
+    </div>
+
+    <!-- FLASH -->
+    <div class="linha">
+        7.
+        <input id="flash1" maxlength="1">
+        <input id="flash2" maxlength="1">
+        <input id="flash3" maxlength="1">
+        <input id="flash4" maxlength="1">
+        <input id="flash5" maxlength="1">
+    </div>
+
+    <!-- MEMÓRIA DE MASSA -->
+    <!-- CORRIGIDO: Removido os inputs extras de hífen para bater com "MEMORIADEMASSA" (14 letras) -->
+    <div class="linha">
+        8.
+        <input id="mmassa1" maxlength="1">
+        <input id="mmassa2" maxlength="1">
+        <input id="mmassa3" maxlength="1">
+        <input id="mmassa4" maxlength="1">
+        <input id="mmassa5" maxlength="1">
+        <input id="mmassa6" maxlength="1">
+        <input id="mmassa7" maxlength="1">
+        <input id="mmassa8" maxlength="1">
+        <input id="mmassa9" maxlength="1">
+        <input id="mmassa10" maxlength="1">
+        <input id="mmassa11" maxlength="1">
+        <input id="mmassa12" maxlength="1">
+        <input id="mmassa13" maxlength="1">
+        <input id="mmassa14" maxlength="1">
+    </div>
+
+    <!-- DMA -->
+    <div class="linha">
+        9.
+        <input id="dma1" maxlength="1">
+        <input id="dma2" maxlength="1">
+        <input id="dma3" maxlength="1">
+    </div>
+
+    <!-- CS -->
+    <div class="linha">
+        10.
+        <input id="cs1" maxlength="1">
+        <input id="cs2" maxlength="1">
+    </div>
+
+    <!-- ADDRESS BUS -->
+    <!-- CORRIGIDO: Removido o hífen fixo. String tratada junta: "ADDRESSBUS" (10 letras) -->
+    <div class="linha">
+        11.
+        <input id="add1" maxlength="1">
+        <input id="add2" maxlength="1">
+        <input id="add3" maxlength="1">
+        <input id="add4" maxlength="1">
+        <input id="add5" maxlength="1">
+        <input id="add6" maxlength="1">
+        <input id="add7" maxlength="1">
+        <input id="add8" maxlength="1">
+        <input id="add9" maxlength="1">
+        <input id="add10" maxlength="1">
+    </div>
+
+    <!-- DATA BUS -->
+    <!-- CORRIGIDO: Removido o hífen fixo. String tratada junta: "DATABUS" (7 letras) -->
+    <div class="linha">
+        12.
+        <input id="data1" maxlength="1">
+        <input id="data2" maxlength="1">
+        <input id="data3" maxlength="1">
+        <input id="data4" maxlength="1">
+        <input id="data5" maxlength="1">
+        <input id="data6" maxlength="1">
+        <input id="data7" maxlength="1">
+    </div>
+
+    <!-- I5 -->
+    <div class="linha">
+        13.
+        <input id="i51" maxlength="1">
+        <input id="i52" maxlength="1">
+    </div>
+
+    <!-- I7 -->
+    <div class="linha">
+        14.
+        <input id="i71" maxlength="1">
+        <input id="i72" maxlength="1">
+    </div>
+
+    <!-- DUAL CORE -->
+    <!-- CORRIGIDO: Adicionado suporte para a palavra inteira "DUALCORE" (8 letras) -->
+    <div class="linha">
+        15.
+        <input id="dual1" maxlength="1">
+        <input id="dual2" maxlength="1">
+        <input id="dual3" maxlength="1">
+        <input id="dual4" maxlength="1">
+        <input id="dual5" maxlength="1">
+        <input id="dual6" maxlength="1">
+        <input id="dual7" maxlength="1">
+        <input id="dual8" maxlength="1">
+    </div>
+
+    <!-- QUAD CORE -->
+    <!-- CORRIGIDO: Adicionado suporte para a palavra inteira "QUADCORE" (8 letras) -->
+    <div class="linha">
+        16.
+        <input id="quad1" maxlength="1">
+        <input id="quad2" maxlength="1">
+        <input id="quad3" maxlength="1">
+        <input id="quad4" maxlength="1">
+        <input id="quad5" maxlength="1">
+        <input id="quad6" maxlength="1">
+        <input id="quad7" maxlength="1">
+        <input id="quad8" maxlength="1">
+    </div>
+
+    <br>
+
+    <button onclick="verificar()">Verificar</button>
+    <h2 id="resultado"></h2>
+    <br>
+
+    <div class="dicas">
+        <h2>DICAS</h2>
+        <p><b>1.</b> É a unidade central de processamento, processa comandos, instruções e dados.</p>
+        <p><b>2.</b> A unidade de lógica e aritmética, responsável pelos cálculos e decisões lógicas do computador.</p>
+        <p><b>3.</b> São memórias de pouca capacidade e muita velocidade (instantânea), eliminando a necessidade de usar a RAM toda hora e localizados dentro da CPU. </p>
+        <p><b>4.</b> Memória volátil, onde os dados são temporários e só enquanto o computador está ligado.</p>
+        <p><b>5.</b> Memória permanente, essencial para guardar dados importantes para o funcionamento do sistema.</p>
+        <p><b>6.</b> Memória Somente de Leitura Programável e Apagável - Os dados continuam armazenados mesmo se desligar o computador.</p>
+        <p><b>7.</b> É um tipo de memória não volátil, com função de permitir o acesso, leitura, escrita e apagamento de informações de forma muito rápida.</p>
+        <p><b>8.</b> Memória de armazenamento em massa (HDs, SSDs).</p>
+        <p><b>9.</b> Acesso direto à memória. Permite que os componentes de hardware acessem diretamente a memória sem precisar da CPU.</p>
+        <p><b>10.</b> É um pino responsável por controlar a ativação ou desativação dos chips que são responsávei pela comunicação entre a CPU, memórias e componentes.</p>
+        <p><b>11.</b> Barramento responsável por apontar o endereço onde o dado será lido/gravado.</p>
+        <p><b>12.</b> Barramento responsável pelo transporte de dados tanto na entrada quanto na saída.</p>
+        <p><b>13.</b> Processador fabricado pela Intel com início em 2009, atualmente está em sua 14ª geração. 
+
+                    Características que compõem a sua arquitetura: Multi-core (vários núcleos, 6 a 14 dependendo da geração), threads e hyper-threading em alguns modelos (um núcleo pode executar mais de uma tarefa lógica), memória cache: L1 (muito rápida), L2 (intermediária), L3 (compartilhada entre os núcleos), frequência de clock varia de 2GHz podendo chegar a 5GHz. É o intermediário ideal para quem quer um bom desempenho funcional e para jogos também. </p>
+        <p><b>14.</b> Processador fabricado pela Intel com início em 2008, evoluindo para gerações mais recentes... 
+
+                    Características diferentes do processador anterior: Possui maior quantidade de núcleos e threads, memória cache maior (memória rápida que armazena dados frequentes), tornando ele extremamente positivo para multitarefas, além disso, com o modo turbo boost ele alcança frequências maiores. </p>
+        <p><b>15.</b> Arquitetura de processador com dois núcleos.</p>
+        <p><b>16.</b> Arquitetura de processador com quatro núcleos.</p>
+    </div>
+
+    <script>
+        function verificar() {
+            function pegarPalavra(prefixo, tamanho) {
+                let palavra = "";
+                for (let i = 1; i <= tamanho; i++) {
+                    let elemento = document.getElementById(prefixo + i);
+                    if (elemento) {
+                        palavra += elemento.value;
+                    }
+                }
+                return palavra.toUpperCase().trim();
+            }
+
+            let r1 = pegarPalavra("cpu", 3);
+            let r2 = pegarPalavra("ula", 3);
+            let r3 = pegarPalavra("reg", 13);
+            let r4 = pegarPalavra("ram", 3);
+            let r5 = pegarPalavra("rom", 3);
+            let r6 = pegarPalavra("eprom", 5);
+            let r7 = pegarPalavra("flash", 5);
+            let r8 = pegarPalavra("mmassa", 14);
+            let r9 = pegarPalavra("dma", 3);
+            let r10 = pegarPalavra("cs", 2);
+            let r11 = pegarPalavra("add", 10);
+            let r12 = pegarPalavra("data", 7);
+            let r13 = pegarPalavra("i5", 2);
+            let r14 = pegarPalavra("i7", 2);
+            let r15 = pegarPalavra("dual", 8);
+            let r16 = pegarPalavra("quad", 8);
+
+            if (
+                r1 === "CPU" &&
+                r2 === "ULA" &&
+                r3 === "REGISTRADORES" &&
+                r4 === "RAM" &&
+                r5 === "ROM" &&
+                r6 === "EPROM" &&
+                r7 === "FLASH" &&
+                r8 === "MEMORIADEMASSA" &&
+                r9 === "DMA" &&
+                r10 === "CS" &&
+                r11 === "ADDRESSBUS" &&
+                r12 === "DATABUS" &&
+                r13 === "I5" &&
+                r14 === "I7" &&
+                r15 === "DUALCORE" &&
+                r16 === "QUADCORE") {
+                document.getElementById("resultado").innerHTML = "Parabéns! Você acertou todas!";
+                document.getElementById("resultado").style.color = "green";
+            } else { document.getElementById("resultado").innerHTML = "Alguma resposta está errada ou incompleta. Tente novamente!"; document.getElementById("resultado").style.color = "red"; }
+        }
+    </script>
 </body>
 </html>
